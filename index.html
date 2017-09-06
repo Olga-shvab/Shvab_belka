@@ -1,195 +1,311 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta name="viewport">
-	<title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="fonts/fontello-ba1f7ee6/css/fontello.css">
+   
+	<title>Belka</title>
 </head>
 <body>
-	
-	<header class="page-header">
-		<div class="page-header__contacts">
-			<ul class="page-hefder__contacts-list">
+	<section class="page-header__contacts">
+			<ul class="page-header__contacts-list">
 				<li class="page-header__contacts-item page-header__contacts-item--clock">24 часа</li>
-				<li class="page-header__contacts-item page-header__contacts-item--phone">+79000000</li>
-				<li class="page-header__contacts-item page-header__contacts-item--address">лотвжоц</li>
+				<li class="page-header__contacts-item page-header__contacts-item--phone">8 (812) 999-88-77</li>
+				<li class="page-header__contacts-item page-header__contacts-item--address">Выборгское ш., 220</li>
 			</ul>
-		</div>
-		<button class="page-header__toggler">
-			<span class="icon-kebab"></span>
-		</button>
-		<div class="page-header__main">
-			<a href="" class="logo"><img src="" alt=""></a>
-			<a href="" class="page-header_buy btn">купить билет</a>
-			<nav class="main-nav">
-				<ul class="main-nav__list">
+			<button class="page-header__toggler"  id="kebab" >
+			<i class="icon-dot-3"></i>
+			</button>
+	</section>
+	<section class="bg-top"> <!-- фоновое изображение для 2х блоков -->
+		<header class="page-header">
+		
+		
+			<div class="page-header__main">
+				<a href="/" class="logo"></a>
+				<a href="" class="page-header_buy btn">Купить билет</a>
+				<nav class="main-nav">
+					<ul class="main-nav__list">   <!-- Навигация-->
 					
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">df</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">df</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">df</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">df</a>
-					</li>
-					<li class="main-nav__item">
-						<a href="" class="main-nav__link">df</a>
-					</li>
-				</ul>
-			</nav>
-		</div>	
-	</header>
+						<li class="main-nav__item">
+							<a href="#track" class="main-nav__link ">Трассы
+								<div class="main-nav__link--line active"></div></a>
+						</li>
+						<li class="main-nav__item">
+							<a href="" class="main-nav__link">Акции
+								<div class="main-nav__link--line"></div></a>
+						</li>
+						<li class="main-nav__item">
+							<a href="" class="main-nav__link">Цены
+								<div class="main-nav__link--line"></div></a>
+						</li>
+						<li class="main-nav__item">
+							<a href="" class="main-nav__link">Отзывы
+								<div class="main-nav__link--line"></div></a>
+						</li>
+						<li class="main-nav__item">
+							<a href="" class="main-nav__link">Контакты
+								<div class="main-nav__link--line"></div></a>
+						</li>
+					</ul>
+				</nav>
+			</div>	
+		</header>
+
 	<!--promo -->
 
 	<section class="promo">
-		<h1 class="promo__title">title</h1>
-		<div class="promo__descr promo__descr--view-xs">
-			<p>Lorem ipsum dolor sit amet.</p>
+		
+		<h1 class="section-title section-title--color-black">Скалодром
+			<div class="section-title-line section-title-line--color-black"></div>
+				
+		</h1>
+		
+		<div class="promo__descr--view-xs">
+			<p>Заберись на вершину, <br> не уезжая в горы!</p>
 			
 		</div>
 		<div class="promo__descr">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quia, nesciunt assumenda dolorem blanditiis explicabo recusandae saepe dicta exercitationem repellat.</p>
+			<p>Заберись на вершину, не уезжая в горы! <br>
+Скалодром BELKA для всех, кто желает впервые попробовать себя в скалолазании, а так же для спортсменов разного уровня. <br>
+Bключает в себя 2 детские трассы и 3 взрослые.<br>
+Cкалолазы смогут найти подробную схему всех подготовленных трасс, посмотреть категорию сложности</p>
 			
 		</div>
-		<a href="" class="page-header_buy btn">купить билет</a>
+		<a href="#" class="page-header_buy btn">Купить билет</a>
+
+
 	</section>
+</section>
 
-	<!--track -->
-	<section class="track">
-		<h2 class="section-title section-title--color-white">Трассы</h2>
-		<a href="#" class="link-left"></a>
-		<div class="track-item">
-			<div class="track-item__top track-item__top--bg">
-				<span class="track-item__title">Lorem.</span>
-				<span class="track-item__height">Lorem ipsum.</span>
-				<span class="track-item__age">Lorem ipsum.</span>
+	<!--track --> 
+	<section class="bg-track">
+		<div class="track">
+			<h2 class="section-title section-title--color-white" id="track">Трассы
+				<div class="section-title-line section-title-line--color-white"></div>
+			</h2>
+			<a href="#" class="link-left"></a>
+			<div class="track-container">
+				<div class="track-item">
+					<div class="track-item__top track-item--bg">
+						<span class="track-item__title">Трасса №1</span>
+						<span class="track-item__height">Высота 15м</span>
+						<span class="track-item__age">Возраст 13+</span>
+					</div>
+					<div class="track-item__img-bg">
+						<img src="img/rock1.png" alt="">
+					</div>
+					<div class="track-item__bottom track-item--bg">
+						<sapn class="track-item__descript">Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.
+						</sapn>
+
+					</div>			
+
+
+				</div>
+				<div class="track-item">
+					<div class="track-item__top track-item--bg">
+						<span class="track-item__title">Трасса №2</span>
+						<span class="track-item__height">Высота 4м</span>
+						<span class="track-item__age">Возраст 4+</span>
+					</div>
+					<div class="track-item__img-bg">
+						<img src="img/rock2.png" alt="">
+						
+					</div>
+					<div class="track-item__bottom track-item--bg">
+						<sapn class="track-item__descript">Для людей с разной физ. подготовкой 
+Различные зацепы и рельефы стены.
+						</sapn>
+
+					</div>			
+
+
+				</div>
+				<div class="track-item">
+					<div class="track-item__top track-item--bg">
+						<span class="track-item__title">Трасса №3</span>
+						<span class="track-item__height">Высота 10м</span>
+						<span class="track-item__age">Возраст 13+</span>
+					</div>
+					<div class="track-item__img-bg">
+						<img src="img/rock3.png" alt="">
+					</div>
+					<div class="track-item__bottom track-item--bg">
+						<sapn class="track-item__descript">Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.
+
+						</sapn>
+
+					</div>			
+
+
+				</div>
+				<div class="track-item">
+					<div class="track-item__top track-item--bg">
+						<span class="track-item__title">Трасса №4</span>
+						<span class="track-item__height">Высота 3м</span>
+						<span class="track-item__age">Возраст 4+</span>
+					</div>
+					<div class="track-item__img-bg">
+						<img src="img/rock4.png" alt="">
+					</div>
+					<div class="track-item__bottom track-item--bg">
+						<sapn class="track-item__descript">Самая невысокая трасса. Специальные  зацепы для детей.
+						</sapn>
+
+					</div>			
+
+
+				</div>
+				<div class="track-item">
+					<div class="track-item__top track-item--bg">
+						<span class="track-item__title">Трасса №5</span>
+						<span class="track-item__height">Высота 8м</span>
+						<span class="track-item__age">Возраст 13+</span>
+					</div>
+					<div class="track-item__img-bg">
+						<img src="img/rock5.png" alt="">
+					</div>
+					<div class="track-item__bottom track-item--bg">
+						<sapn class="track-item__descript">Средняя высота и сложность.Физ. подготовка не обязательна.
+						</sapn>
+
+					</div>			
+
+
+				</div>
 			</div>
-			<div class="track-item__img-bg">
-				
+			<a href="#" class="link-right"></a>
+		</section>
+
+		<!--offer -->
+		<section class="offer">
+			<h2 class="section-title section-title--color-black">Акции
+				<div class="section-title-line section-title-line--color-black"></div>
+			</h2>
+			<div class="offer-container">
+				<div class="offer-block ">
+				    <img src="img/offer1.png" alt="" >
+					<span class="offer-block__text">Компаниям от 5 чел. скидка 10%</span>
+					<span class="offer-block--bg"></span>
+					<a href="#" class="offer-block__link">Подробнее</a>
+
+				</div>
+				<div class="offer-block">
+					<img src="img/offer2.png" alt="" ">
+					<span class="offer-block__text">Многодетным семьям скидка 20%</span>
+					<span class="offer-block--bg"></span>
+					<a href="#" class="offer-block__link">Подробнее</a>
+				</div>
+				<div class="offer-block">
+					<img src="img/offer3.png" alt="" >
+					<span class="offer-block__text">Студентам <br> по карте isic 20%</span>
+					<span class="offer-block--bg"></span>
+					<a href="#" class="offer-block__link">Подробнее</a>
+				</div>
 			</div>
-			<div class="track-item__bottom track-item__bottom--bg">
-				<sapn class="track-item__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dicta ad tempora maiores quo consequuntur saepe rem, unde, totam facere.
-				</sapn>
-
-			</div>			
-
-
-		</div>
-		<div class="track-item">
-			<div class="track-item__top track-item__top--bg">
-				<span class="track-item__title">Lorem.</span>
-				<span class="track-item__height">Lorem ipsum.</span>
-				<span class="track-item__age">Lorem ipsum.</span>
-			</div>
-			<div class="track-item__img-bg">
-				
-			</div>
-			<div class="track-item__bottom track-item__bottom--bg">
-				<sapn class="track-item__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dicta ad tempora maiores quo consequuntur saepe rem, unde, totam facere.
-				</sapn>
-
-			</div>			
-
-
-		</div>
-		<div class="track-item">
-			<div class="track-item__top track-item__top--bg">
-				<span class="track-item__title">Lorem.</span>
-				<span class="track-item__height">Lorem ipsum.</span>
-				<span class="track-item__age">Lorem ipsum.</span>
-			</div>
-			<div class="track-item__img-bg">
-				
-			</div>
-			<div class="track-item__bottom track-item__bottom--bg">
-				<sapn class="track-item__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dicta ad tempora maiores quo consequuntur saepe rem, unde, totam facere.
-				</sapn>
-
-			</div>			
-
-
-		</div>
-		<div class="track-item">
-			<div class="track-item__top track-item__top--bg">
-				<span class="track-item__title">Lorem.</span>
-				<span class="track-item__height">Lorem ipsum.</span>
-				<span class="track-item__age">Lorem ipsum.</span>
-			</div>
-			<div class="track-item__img-bg">
-				
-			</div>
-			<div class="track-item__bottom track-item__bottom--bg">
-				<sapn class="track-item__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dicta ad tempora maiores quo consequuntur saepe rem, unde, totam facere.
-				</sapn>
-
-			</div>			
-
-
-		</div>
-		<div class="track-item">
-			<div class="track-item__top track-item__top--bg">
-				<span class="track-item__title">Lorem.</span>
-				<span class="track-item__height">Lorem ipsum.</span>
-				<span class="track-item__age">Lorem ipsum.</span>
-			</div>
-			<div class="track-item__img-bg">
-				
-			</div>
-			<div class="track-item__bottom track-item__bottom--bg">
-				<sapn class="track-item__descript">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit dicta ad tempora maiores quo consequuntur saepe rem, unde, totam facere.
-				</sapn>
-
-			</div>			
-
-
-		</div>
-		<a href="#" class="link-right"></a>
-	</section>
-
-	<!--offer -->
-	<section class="offer">
-		<h2 class="section-title section-title--color-black">Акции</h2>
-		<div class="offer-block ">
-		    <img src="" alt="" class="offer-block--bg">
-			<span class="offer-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-		</div>
-		<div class="offer-block">
-			<img src="" alt="" class="offer-block--bg">
-			<span class="offer-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-		</div>
-		<div class="offer-block">
-			<img src="" alt="" class="offer-block--bg">
-			<span class="offer-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
 		</div>
 	</section>
 
 	<!--service-->
 	<section class="service">
 		<div class="service-descrip">
-			<h2 class="section-title section-title--color-white">У нас</h2>
-			<span class="service-descrip--equipment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempora ipsum, deleniti ipsam inventore quibusdam quaerat laborum itaque quia sed.
-			</span>
-			<span class="service-descrip--track">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempora ipsum, deleniti ipsam inventore quibusdam quaerat laborum itaque quia sed.
-			</span>
-			<span class="service-descrip--help">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis tempora ipsum, deleniti ipsam inventore quibusdam quaerat laborum itaque quia sed.
-			</span>
+			<h2 class="section-title section-title--color-white">У нас
+				<div class="section-title-line section-title-line--color-white"></div>
+			</h2>
+			<div class="service-descrip__block">
+				<span class="service-descrip__equipment">Альпинистское снаряжение  и страховочные устройства французской компании Petzl
+				</span>
+				<span class="service-descrip__track">Понятная маркировка трасс (ламинированные таблички и зацепки определенного цвета для каждой трассы)
+				</span>
+				<span class="service-descrip__help">На территории скалодрома всегда находится инструктор, который готов ответить на любой Ваш вопрос! 
+				</span>
+			</div>
 
 
 		</div>
 		<div class="service-photo">
 			<a href="#" class="link-left"></a>
-			<img src="#" alt="" class="service-photo__left">
-			<img src="#" alt="" class="service-photo__center">
-			<img src="#" alt="" class="service-photo__right">
+			<img src="img/service1.png" alt="" class="service-photo__left">
+			<img src="img/service2.png" alt="" class="service-photo__center">
+			<img src="img/service3.png" alt="" class="service-photo__right">
 			<a href="#" class="link-right"></a>
 		</div>
 	</section>
+
+	<!-- price -->
 	<section class="bg-bottom">
 		<section class="price">
-			<h2 class="section-title section-title--color-black">Цены</h2>
+			<h2 class="section-title section-title--color-black">Цены
+				<div class="section-title-line section-title-line--color-black"></div>
+			</h2>
+			<table class="price-table">
+				<tr class="price-table__tr">
+					<td class="price-table__td"></td>
+					<td class="price-table__td price-table__td--color">ДЕТСКИЙ <br> от 4 лет</td>
+					<td class="price-table__td">ВЗРОСЛЫЙ/ДЕТСКИЙ <br> от 7 лет</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td" collspan="3">Прохождение препятствий парка 3 часа</td>
+					
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Eaque.</td>
+					<td class="price-table__td">Soluta.</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Facere?</td>
+					<td class="price-table__td">Unde!</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Asperiores.</td>
+					<td class="price-table__td">Ut.</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Ab.</td>
+					<td class="price-table__td">Aut.</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Laudantium.</td>
+					<td class="price-table__td">Deserunt.</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Mollitia.</td>
+					<td class="price-table__td">Veritatis?</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Fugit.</td>
+					<td class="price-table__td">Cupiditate!</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Provident!</td>
+					<td class="price-table__td">At!</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Enim!</td>
+					<td class="price-table__td">At!</td>
+				</tr>
+				<tr class="price-table__tr">
+					<td class="price-table__td">Lorem.</td>
+					<td class="price-table__td">Similique.</td>
+					<td class="price-table__td">Ipsa.</td>
+				</tr>
+			</table>
+			<a href="" class="price_buy btn">Купить билет</a>
+			<a href="#" class="download">Техника безопасности</a>
 
 
 <!-- Здесь пока не понимаю, что писать -->
@@ -199,7 +315,9 @@
 
 		<!-- comments -->
 		<section class="comments">
-			<h2 class="section-title section-title--color-black">Отзывы</h2>
+			<h2 class="section-title section-title--color-black">Отзывы
+				<div class="section-title-line section-title-line--color-black"></div>
+			</h2>
 			<a href="#" class="link-left"></a>
 			<div class="comments-item">
 				<img src="#" alt="" class="comments-item__img">
@@ -240,29 +358,32 @@
 	</section>
 
 <!-- footer -->
-	<footer class="footer-block">
-		<div class="footer-contact">
-			<span class="footer-contact__address">Lorem ipsum dolor sit.</span>
-			<span class="footer-contact__phone">123456789</span>
-			<ul class="footer-contact__nav-list">
-				<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Lorem.</a></li>
-				<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Sed!</a></li>
-				<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Rerum.</a></li>
-				<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Aliquam!</a></li>
-				<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Natus.</a></li>
-			</ul>
-			<ul class="social-list">
-				<li class="social-item"><a href="" class="social-link social-link--tw"></a></li>
-				<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
-				<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
-			</ul>
-		</div>
-		<div class="footer-map">
-			<script>
+<section class="footer">
+		<footer class="footer-block">
+			<div class="footer-contact">
+				<span class="footer-contact__address">Lorem ipsum dolor sit.</span>
+				<span class="footer-contact__phone">123456789</span>
+				<ul class="footer-contact__nav-list">
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Lorem.</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Sed!</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Rerum.</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Aliquam!</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Natus.</a></li>
+				</ul>
+				<ul class="social-list">
+					<li class="social-item"><a href="" class="social-link social-link--tw"></a></li>
+					<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
+					<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
+				</ul>
+				<a href="#" class="linl-up"></a>
+			</div>
+			<div class="footer-map">
+				<script>
+				
+				</script>
+			</div>
 			
-			</script>
-		</div>
-		
-	</footer>
+		</footer>
+ </section>
 </body>
 </html>
