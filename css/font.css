@@ -1,0 +1,15 @@
+@font-face {
+font-family: 'Montserrat', sans-serif;
+src: url('https://fonts.googleapis.com/css?family=Montserrat');
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?60753329');
+  src: url('../font/fontello.eot?60753329#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?60753329') format('woff2'),
+       url('../font/fontello.woff?60753329') format('woff'),
+       url('../font/fontello.ttf?60753329') format('truetype'),
+       url('../font/fontello.svg?60753329#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
