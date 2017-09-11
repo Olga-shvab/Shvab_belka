@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="fonts/fontello-ba1f7ee6/css/fontello.css">
-   
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+ 
+  </head>
+
 	<title>Belka</title>
 </head>
 <body>
@@ -88,8 +92,10 @@ Cкалолазы смогут найти подробную схему всех
 			<h2 class="section-title section-title--color-white" id="track">Трассы
 				<div class="section-title-line section-title-line--color-white"></div>
 			</h2>
-			<a href="#" class="link-left"></a>
+			
 			<div class="track-container">
+
+				
 				<div class="track-item">
 					<div class="track-item__top track-item--bg">
 						<span class="track-item__title">Трасса №1</span>
@@ -100,8 +106,8 @@ Cкалолазы смогут найти подробную схему всех
 						<img src="img/rock1.png" alt="">
 					</div>
 					<div class="track-item__bottom track-item--bg">
-						<sapn class="track-item__descript">Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.
-						</sapn>
+						<span class="track-item__descript">Трасса для опытных скалолазов.Требуется наличие хорошей физ. подготовки.
+						</span>
 
 					</div>			
 
@@ -118,9 +124,9 @@ Cкалолазы смогут найти подробную схему всех
 						
 					</div>
 					<div class="track-item__bottom track-item--bg">
-						<sapn class="track-item__descript">Для людей с разной физ. подготовкой 
+						<span class="track-item__descript">Для людей с разной физ. подготовкой 
 Различные зацепы и рельефы стены.
-						</sapn>
+						</span>
 
 					</div>			
 
@@ -136,9 +142,9 @@ Cкалолазы смогут найти подробную схему всех
 						<img src="img/rock3.png" alt="">
 					</div>
 					<div class="track-item__bottom track-item--bg">
-						<sapn class="track-item__descript">Трасса подойтет как для профессионалов,так и для любителей. Необходима хорошая физ. подготовка.
+						<sapn class="track-item__descript">Трасса подойтет как для профессионалов, так и для любителей. Необходима хорошая физ. подготовка.
 
-						</sapn>
+						</span>
 
 					</div>			
 
@@ -154,8 +160,8 @@ Cкалолазы смогут найти подробную схему всех
 						<img src="img/rock4.png" alt="">
 					</div>
 					<div class="track-item__bottom track-item--bg">
-						<sapn class="track-item__descript">Самая невысокая трасса. Специальные  зацепы для детей.
-						</sapn>
+						<span class="track-item__descript">Самая невысокая трасса. Специальные  зацепы для детей.<br><br>
+						</span>
 
 					</div>			
 
@@ -171,15 +177,16 @@ Cкалолазы смогут найти подробную схему всех
 						<img src="img/rock5.png" alt="">
 					</div>
 					<div class="track-item__bottom track-item--bg">
-						<sapn class="track-item__descript">Средняя высота и сложность.Физ. подготовка не обязательна.
-						</sapn>
+						<span class="track-item__descript">Средняя высота и сложность.Физ. подготовка не обязательна.
+						</span>
 
 					</div>			
 
 
 				</div>
+				
 			</div>
-			<a href="#" class="link-right"></a>
+			
 		</section>
 
 		<!--offer -->
@@ -229,11 +236,47 @@ Cкалолазы смогут найти подробную схему всех
 
 		</div>
 		<div class="service-photo">
-			<a href="#" class="link-left"></a>
-			<img src="img/service1.png" alt="" class="service-photo__left">
-			<img src="img/service2.png" alt="" class="service-photo__center">
-			<img src="img/service3.png" alt="" class="service-photo__right">
-			<a href="#" class="link-right"></a>
+			<div class="service-photo__loop">
+				<img src="img/service1.png" alt="" class=" service-photo__left ">
+				<span class="service-photo__bg"></span>
+				<a href="#openModal1" class="lupe">
+					<div class="l-round"></div>
+					<div class="l-line"></div>
+				</a>
+				
+
+			</div>
+			<a href="#close">
+				<div class="modal-window1" id="openModal1">
+						
+				</div>
+			</a>
+			<div class="service-photo__loop">
+				<img src="img/service2.png" alt="" class="service-photo__center">
+				<span class="service-photo__bg"></span>
+				<a href="#openModal2" class="lupe">
+					<div class="l-round"></div>
+					<div class="l-line"></div>
+				</a>
+			</div>
+			<a href="#close">
+				<div class="modal-window2" id="openModal2">
+						
+				</div>
+			</a>
+			<div class="service-photo__loop">
+				<img src="img/service3.png" alt="" class="service-photo__right">
+				<span class="service-photo__bg"></span>
+				<a href="#openModal3" class="lupe">
+					<div class="l-round"></div>
+					<div class="l-line"></div>
+				</a>
+			</div>
+			<a href="#close">
+				<div class="modal-window3" id="openModal3">
+						
+				</div>
+			</a>
 		</div>
 	</section>
 
@@ -243,72 +286,69 @@ Cкалолазы смогут найти подробную схему всех
 			<h2 class="section-title section-title--color-black">Цены
 				<div class="section-title-line section-title-line--color-black"></div>
 			</h2>
-			<table class="price-table">
+			<table class="price-table" >
 				<tr class="price-table__tr">
 					<td class="price-table__td"></td>
 					<td class="price-table__td price-table__td--color">ДЕТСКИЙ <br> от 4 лет</td>
-					<td class="price-table__td">ВЗРОСЛЫЙ/ДЕТСКИЙ <br> от 7 лет</td>
+					<td class="price-table__td price-table__td--color">ВЗРОСЛЫЙ/ДЕТСКИЙ <br> от 7 лет</td>
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td" collspan="3">Прохождение препятствий парка 3 часа</td>
+					<td class="price-table__td price-table__td--center-color" colspan="3">Прохождение препятствий парка 3 часа</td>
 					
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Eaque.</td>
-					<td class="price-table__td">Soluta.</td>
+					<td class="price-table__td price-table__td--color">Все трассы <br> веревочный парк+ скалодром</td>
+					<td class="price-table__td price-table__td--data">2200 Р</td>
+					<td class="price-table__td price-table__td--data">2500 Р</td>
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Facere?</td>
-					<td class="price-table__td">Unde!</td>
+					<td class="price-table__td price-table__td--color">скалодром</td>
+					<td class="price-table__td price-table__td--data">1000 Р</td>
+					<td class="price-table__td price-table__td--data price-table__td--check">1300 Р</td>
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Asperiores.</td>
-					<td class="price-table__td">Ut.</td>
+					<td class="price-table__td price-table__td--color">веревочный парк</td>
+					<td class="price-table__td price-table__td--data">1200 Р</td>
+					<td class="price-table__td price-table__td--data">1500 Р</td>
+				</tr>
+
+				</table>
+				<table class="price-table">
+				<tr class="price-table__tr">
+					<td class="price-table__td price-table__td--center-color" colspan="3">Прохождение препятствий парка 12 часов</td>
+					
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Ab.</td>
-					<td class="price-table__td">Aut.</td>
+					<td class="price-table__td price-table__td--color">Все трассы <br> веревочный парк+ скалодром</td>
+					<td class="price-table__td price-table__td--data">5500 Р</td>
+					<td class="price-table__td price-table__td--data">6000 Р</td>
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Laudantium.</td>
-					<td class="price-table__td">Deserunt.</td>
+					<td class="price-table__td price-table__td--color">скалодром</td>
+					<td class="price-table__td price-table__td--data">3000 Р</td>
+					<td class="price-table__td price-table__td--data">3500 Р</td>
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Mollitia.</td>
-					<td class="price-table__td">Veritatis?</td>
+					<td class="price-table__td price-table__td--color">веревочный парк</td>
+					<td class="price-table__td price-table__td--data">4000 Р</td>
+					<td class="price-table__td price-table__td--data">4500 Р</td>
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Fugit.</td>
-					<td class="price-table__td">Cupiditate!</td>
+					<td class="price-table__td " colspan="3">Каждый дополнительный час + 500 Р</td>
+					
 				</tr>
 				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Provident!</td>
-					<td class="price-table__td">At!</td>
-				</tr>
-				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Enim!</td>
-					<td class="price-table__td">At!</td>
-				</tr>
-				<tr class="price-table__tr">
-					<td class="price-table__td">Lorem.</td>
-					<td class="price-table__td">Similique.</td>
-					<td class="price-table__td">Ipsa.</td>
+					<td class="price-table__td price-table__td--center-color" >Персональный оператор парка</td>
+					<td class="price-table__td price-table__td--center-color" colspan="2">600 Р/час</td>
 				</tr>
 			</table>
-			<a href="" class="price_buy btn">Купить билет</a>
-			<a href="#" class="download">Техника безопасности</a>
+			<div class="wrap-download">
+				<a href="" class="price_buy btn">Купить билет</a>
+				<a href="#" class="download">Техника безопасности (PDF)</a>
+			</div>
 
 
-<!-- Здесь пока не понимаю, что писать -->
+
 
 
 		</section>
@@ -318,42 +358,54 @@ Cкалолазы смогут найти подробную схему всех
 			<h2 class="section-title section-title--color-black">Отзывы
 				<div class="section-title-line section-title-line--color-black"></div>
 			</h2>
-			<a href="#" class="link-left"></a>
-			<div class="comments-item">
-				<img src="#" alt="" class="comments-item__img">
-				<span class="comments-item__name">Lorem.</span>
-				<span class="comments-item__status">Lorem ipsum.</span>
-				<ul class="social-list">		
-					<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
-					<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
-				</ul>
-				<span class="comments-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore suscipit excepturi iste modi molestiae ut.</span>
+			<div class="comments-wrap">
+				<div class="comments-item">
+					<img src="img/photo-alex.png" alt="" class="comments-item__img">
+					<span class="comments-item__name">Алексей</span><br>
+					<span class="comments-item__status">Скалолаз-любитель</span><br>
+					<ul class="social-list">		
+						<li class="social-item"><a href="#" class="social-link social-link--vk"></a></li>
+						<li class="social-item"><a href="#" class="social-link social-link--ins"></a></li>
+					</ul>
+
+					<span class="comments-item__text">Интересные трассы, вкусная еда и самые приветливые тренера! </span>
+
+				</div>
+				<div class="comments-item">
+					<img src="img/photo-masha.png" alt="" class="comments-item__img">
+					<span class="comments-item__name">Мария</span><br>
+					<span class="comments-item__status">Студентка</span>
+					<ul class="social-list">		
+						<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
+						<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
+					</ul>
+					<span class="comments-item__text">Лучший скалодром в городе.</span>
+
+				</div>
+				<div class="comments-item">
+					<img src="img/photo-katya.png" alt="" class="comments-item__img">
+					<span class="comments-item__name">Екатерина</span><br>
+					<span class="comments-item__status">Мама троих детей</span>
+					<ul class="social-list">		
+						<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
+						<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
+					</ul>
+					<span class="comments-item__text">Парк «BELKA» - отличная альтернатива наскучившим походам в кино и кафе.</span>
+		         </div>
+		         <div class="comments-item">
+					<img src="img/photo-masha.png" alt="" class="comments-item__img">
+					<span class="comments-item__name">Для примера</span><br>
+					<span class="comments-item__status">Lorem ipsum.</span>
+					<ul class="social-list">		
+						<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
+						<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
+					</ul>
+					<span class="comments-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore suscipit excepturi iste modi molestiae ut.</span>
+		         </div>
 
 			</div>
-			<div class="comments-item">
-				<img src="#" alt="" class="comments-item__img">
-				<span class="comments-item__name">Lorem.</span>
-				<span class="comments-item__status">Lorem ipsum.</span>
-				<ul class="social-list">		
-					<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
-					<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
-				</ul>
-				<span class="comments-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore suscipit excepturi iste modi molestiae ut.</span>
 
-			</div>
-			<div class="comments-item">
-				<img src="#" alt="" class="comments-item__img">
-				<span class="comments-item__name">Lorem.</span>
-				<span class="comments-item__status">Lorem ipsum.</span>
-				<ul class="social-list">		
-					<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
-					<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
-				</ul>
-				<span class="comments-item__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore suscipit excepturi iste modi molestiae ut.</span>
-
-			</div>
-
-			<a href="#" class="link-right"></a>
+			
 		</section>
 	</section>
 
@@ -361,29 +413,36 @@ Cкалолазы смогут найти подробную схему всех
 <section class="footer">
 		<footer class="footer-block">
 			<div class="footer-contact">
-				<span class="footer-contact__address">Lorem ipsum dolor sit.</span>
-				<span class="footer-contact__phone">123456789</span>
+				<span class="footer-contact__address">Выборгское ш, 220</span>
+				<span class="footer-contact__phone">8 (812) 999-88-77</span>
 				<ul class="footer-contact__nav-list">
-					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Lorem.</a></li>
-					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Sed!</a></li>
-					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Rerum.</a></li>
-					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Aliquam!</a></li>
-					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Natus.</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Трассы</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Акции</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Цены</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Отзывы</a></li>
+					<li class="footer-contact__nav-item"><a href="" class="footer-contact__nav-link">Контакты</a></li>
 				</ul>
 				<ul class="social-list">
-					<li class="social-item"><a href="" class="social-link social-link--tw"></a></li>
-					<li class="social-item"><a href="" class="social-link social-link--vk"></a></li>
-					<li class="social-item"><a href="" class="social-link social-link--ins"></a></li>
+					<li class="social-item"><a href="#" class="social-link social-link-footer--tw"></a></li>
+					<li class="social-item"><a href="#" class="social-link social-link-footer--vk"></a></li>
+					<li class="social-item"><a href="#" class="social-link social-link-footer--ins"></a></li>
 				</ul>
 				<a href="#" class="linl-up"></a>
 			</div>
 			<div class="footer-map">
-				<script>
-				
-				</script>
+				<img src="img/map.png" alt="">
+				<div class="placeholder">
+					
+				</div>
 			</div>
-			
+			 <div id="toTop" class="link-up">
+				<span class="link-up-pick"></span>
+			</div>
 		</footer>
  </section>
+  <script type="text/javascript" src="jquery/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="jquery/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script  type="text/javascript" src="js/moov.js"/></script>
 </body>
 </html>
