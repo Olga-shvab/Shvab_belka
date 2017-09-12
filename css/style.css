@@ -1244,6 +1244,7 @@ button.slick-next.slick-arrow:before {
 	height: 40px;
 	position: relative;
 	margin-top: 130px;
+	cursor: pointer;
 }
 .link-up-pick:before{
 	content: '';
