@@ -208,13 +208,21 @@ $(document).ready(function() {
 
 
 
-
+/*
 $(document).ready(function() {								 
 	$('.icon-dot-3').on('click', function() {
 		 
 			$('.main-nav').css('display', 'block')
 	});
 });
+*/
+
+$(document).ready(function() {         
+ $('.icon-dot-3').on('click', function() {
+   $('.main-nav').toggle();
+ });
+});
+
 /*
 $(document).ready(function() {								 
 	$('.price-table__td--color').on('click', function() {
